@@ -93,18 +93,16 @@
     ```
     jfrog rt c rt-server --url=http://domain/artifactory --user=admin --password=password
     ```
-    - To upload a file to a repository. Here gernic-local is a miscellaneous repository name, you can check it on console.
+
     ```
     jfrog rt u "path to your file" generic-local
     ```
     Visit [JFrog CLI](https://www.jfrog.com/confluence/display/CLI/CLI+for+JFrog+Artifactory) for more commands.
 
-    You can deploy the application on any cloud platform or you can push the build image to docker hub.
 - ## References
     - [Python Flask Application](https://flask.palletsprojects.com/en/1.1.x/tutorial/)
     - [Python Testing](https://docs.python.org/3/library/unittest.html)
     - [Git & GitHub](https://www.datacamp.com/community/tutorials/git-push-pull)
     - [Jenkins](https://www.vogella.com/tutorials/Jenkins/article.html)
     - [JFrog Artifactory](https://www.youtube.com/watch?v=WrKEozY9efQ)
-- ## Thank you :D
-    I have used many online resources while creating the application and I would like to thank them. As I'm also in a learning stage, I would like to know your feedback and suggestions as well. So please contact me at: ritheeshbaradwaj@gmail.com. 
+- ## Thank you
