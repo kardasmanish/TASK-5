@@ -8,11 +8,10 @@
     In this project I pushed my project code to GitHub] which is linked with Jenkins, which is responsible to build, test and deploy it into production facilitating continuous integration and continuous delivery. In turn, the binaries generated from the build process will be stored in JFrog Artifactory. I developed a basic python application using Flask. I'll walk you through the process and try to provide useful information to write code and serve it to your customers or friends. So Let's get started!
 - ## Python Application
     <a href="https://www.python.org/" ><img src="Images/py.jpg" width="30" height=30></a>
-    Let's start with a simple application. You can use this project or you can develop your own [Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/) Application.
-
+   
     <img src="Images/flaskapp1.jpeg" width="400" height="200">
 
-    Using the below commands you can run this application on your localhost.
+    Using the below commands to run the application on localhost.
 
     ```
     pip install -r requirements.txt
@@ -21,7 +20,7 @@
     ```
     python app.py
     ```
-    Our application will try to display a random message on our webpage when the user gave a string as input. Visit http://localhost:5000/username as shown below in the url.
+    The application will try to display a random message on our webpage when the user gave a string as input. Visit http://localhost:5000/username as shown below in the url.
 
     <img src="Images/flaskapp2.jpeg" width="400" height=200>
 
@@ -66,11 +65,11 @@
     - To tell Jenkins server to perform certain tasks i.e, to automate build, test and deploy (we can include any other stages) we often write instructions to be followed by Jenkins server in Jenkinsfile. To use this you need to install Pipeline plugin on Jenkins
     - [Jenkins Pipeline](https://jenkins.io/doc/pipeline/tour/getting-started/) is a suite of plugins which supports implementing and integrating continuous delivery pipelines into Jenkins. A continuous delivery pipeline is an automated expression of your process for getting software from version control right through to your users and customers. Jenkins Pipeline provides an extensible set of tools for modeling simple-to-complex delivery pipelines "as code". The definition of a Jenkins Pipeline is typically written into a text file (called a Jenkinsfile) which in turn is checked into a project’s source control repository.
 
-    In the current project I provided instructions to Jenkins, to build my python application, test it and upload the artifacts or binaries or by products to JFrog Artifactory. In order to use Jenkinsfile you need to select Pipeline option while creating while creating a Job.
+
     
     <img src="Images/jenkinspipeline.JPG" width="400" height=200>
 
-   In this pipeline , I'm not deploying application on sever, but when you build the Job you can use the applicayion in your localhost, port:5000. Check this [tutorial](https://www.youtube.com/watch?v=_o42ZCkCJb4) for further details to use Jenkinsfile in pipeline. The Artifactory stage that used in the Jenkinsfile will be coverd below.
+
 
 - ## JFrog Artifactory
     <a href="https://jfrog.com/" ><img src="Images/jf.jpg" width="35" height=35></a>
@@ -81,11 +80,6 @@
 
         <img src="Images/artifactory.jpg" width="400" height=200>
 
-    - You can use [jfrog](https://jfrog.com/open-source/) open source. Use this [tutorial](https://www.youtube.com/watch?v=Lg4a6Sc_Xco) to install artifactory as a service on windows.
-    - For Ubuntu use [this.](https://websiteforstudents.com/how-to-install-jfrog-artifactory-on-ubuntu-18-04-16-04/)
-    - Now in our machine artifactory will run as a service.
-    You can use the console to create repostories and explore. Also you can install JFrog - CLI to interact through terminal.
-    - Install [Chocolatey](https://chocolatey.org/docs/installation) and run the below command.
     ```
     choco install jfrog-cli
     ```
